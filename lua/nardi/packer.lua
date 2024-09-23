@@ -25,5 +25,8 @@ return require('packer').startup(function(use)
     
     use {'nvim-treesitter/playground'}
 	
+    use {'ThePrimeagen/harpoon'}
+
+    use {'github/copilot.vim'}
 
   end)
