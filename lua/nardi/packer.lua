@@ -33,9 +33,16 @@ return require('packer').startup(function(use)
 
 	use {'tpope/vim-fugitive'}
 
+	-- lsp repos
 	use({'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'})
 	use({'neovim/nvim-lspconfig'})
 	use({'hrsh7th/nvim-cmp'})
 	use({'hrsh7th/cmp-nvim-lsp'})
+
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    }
 
   end)
