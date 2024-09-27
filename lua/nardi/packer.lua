@@ -27,8 +27,6 @@ return require('packer').startup(function(use)
 
 	use {'ThePrimeagen/harpoon'}
 
-	use {'github/copilot.vim'}
-
 	use {'mbbill/undotree'}
 
 	use {'tpope/vim-fugitive'}
@@ -44,5 +42,7 @@ return require('packer').startup(function(use)
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     }
+
+    use {"github/copilot.vim"}
 
   end)
