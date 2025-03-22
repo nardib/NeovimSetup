@@ -45,4 +45,6 @@ return require('packer').startup(function(use)
 
     use {"github/copilot.vim"}
 
+    use {"christoomey/vim-tmux-navigator"}
+
   end)
