@@ -25,3 +25,13 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
+vim.opt.wrap = true
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "tex", "markdown" },
+  callback = function()
+    vim.opt_local.spell = true
+    vim.opt_local.spelllang = { "it", "en" }
+  end
+})
+

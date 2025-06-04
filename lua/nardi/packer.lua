@@ -47,4 +47,17 @@ return require('packer').startup(function(use)
 
     use {"christoomey/vim-tmux-navigator"}
 
+    use {
+        "lervag/vimtex",
+        config = function ()
+            vim.g.vimtex_view_method = 'zathura'
+            vim.g.vimtex_compiler_latexmk = {
+                options = {
+                    '-shell-escape',
+                    '-synctex=1',
+                    '-interaction=nonstopmode',
+            },
+        }
+        end}
+
   end)
