@@ -1,3 +1,3 @@
-require("nardi.packer")
 require("nardi.remap")
 require("nardi.set")
+require("nardi.lazy")
