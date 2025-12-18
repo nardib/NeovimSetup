@@ -28,6 +28,11 @@ return {
             -- Instead of true it can also be a list of languages
             additional_vim_regex_highlighting = false,
           },
+
+          refactor = {
+              highlight_definitions = { enable = true },
+              highlight_current_scope = { enable = false },
+          },
        }) 
     end
 }
